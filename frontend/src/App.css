@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+  background: whitesmoke;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin: auto;
+  display: block;
+  height: calc(100vh - 11rem);
+  overflow-y: auto;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+td,
+th {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 8.5px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(178, 223, 255, 0.31);
+}
+
+tr:hover {
+  background-color: paleturquoise;
+}
+
+th {
+  position: sticky;
+  top: -3px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: skyblue;
+  font-weight: normal;
+  z-index: 10;
+}
+
+.checkboxs {
+  width: 2.5%;
+  text-align: center;
+}
+
+.name {
+  width: 13.57%;
+  word-break: break-word;
+}
+
+.designation {
+  width: 13.57%;
+  word-break: break-word;
+}
+
+.company {
+  width: 13.57%;
+  word-break: break-word;
+}
+
+.industry {
+  width: 13.57%;
+  word-break: break-word;
+}
+
+.emailHead {
+  width: 13.57%;
+  word-break: break-word;
+}
+
+.email {
+  width: 13.57%;
+  word-break: break-word;
+  position: relative;
+}
+
+.phoneNumber {
+  width: 13.57%;
+  word-break: break-word;
+}
+
+.country {
+  width: 13.57%;
+  word-break: break-word;
+}
+
+.action {
+  width: 2.5%;
+  text-align: center;
+}
+
+.action > img {
+  width: 15px;
+  cursor: pointer;
+}
+
+.emailHover {
+  position: absolute;
+  background-image: url(./utils//emailP.svg);
+  background-size: cover;
+  width: 20rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  right: 10px;
+}
+
+.emailHover > a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 4rem;
+  background: #fbfbfb;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid skyblue;
+}
+
+.header-ul {
+  display: flex;
+  width: 97%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  list-style: none;
+}
+
+.mainHead {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #454545;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.searchBox {
+  width: 17rem;
+  height: 2.1rem;
+  background: #f2f2f2;
+  border-radius: 6px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.userField {
+  display: flex;
+  cursor: pointer;
+}
+
+.userField > img {
+  width: 2.2rem;
+  margin-right: 5px;
+}
+
+.userField > div {
+  height: 2.2 rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.userField > div > p {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.9;
+}
+
+.userField > div > .userType {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  flex-wrap: nowrap;
+}
+
+.filter > img {
+  height: 100%;
+}
+
+.filter > div {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.filter > div > img {
+  height: 100%;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  width: 98%;
+  margin: auto;
+  border-radius: 15px;
+  background: whitesmoke;
+}
+
+.mainpage {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup {
+  width: 13rem;
+  height: 9rem;
+  background-color: rgb(183, 243, 236);
+  position: absolute;
+  top: calc(50% - 4.5rem);
+  left: calc(50% - 6.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 50;
+}
+
+.popdiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.btnCan {
+  width: 100px;
+  height: 30px;
+  background: #2da5fc;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btnOk {
+  color: #1f2633;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.popup > img {
+  width: 87%;
+}
+
+#successUpload {
+  width: 60%;
+}
+
+.popup > label {
+  height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  background-image: url(./utils/uploads.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+.popup > label > svg {
+  width: 0;
+}
+
+.alert {
+  position: absolute;
+  width: 20rem;
+  height: 2.5rem;
+  left: calc(50% - 10rem);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 71, 97);
+  border-radius: 7px;
+  color: white;
+}
+
+.mailContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.innerContainer {
+  width: calc(100% - 10rem);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 10rem;
+  height: 100%;
+  background-color: rgb(194, 233, 249);
+}
+
+.asidelogo {
+  cursor: pointer;
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 61px;
+  color: #0884ff;
+  position: relative;
+  left: 10%;
+}
+
+.signOutBtn {
+  position: relative;
+  width: 4rem;
+  cursor: pointer;
+  bottom: 5.6%;
+  left: 10%;
+}
+
+.asidelogo > div {
+  width: 100%;
+  height: 100%;
+  border: 2px solid bal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidetop {
+  height: 11.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidetop > div {
+  width: 100%;
+  height: 66.66%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dashbord {
+  width: 5.5rem;
+  cursor: pointer;
+}
+
+.asideOpenimg {
+  width: 8rem;
+  cursor: pointer;
+}
+
+footer {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer > img {
+  width: 7.5%;
+}
+
+/* ---------------mobile------------------- */
+.app {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-size: 2rem;
+}
+
+.app {
+  text-align: center;
+}
+
+.app > button {
+  width: 80%;
+  height: 5rem;
+  background-color: skyblue;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .mailContainer {
+    display: none;
+  }
+
+  .app {
+    display: flex;
+  }
+}
